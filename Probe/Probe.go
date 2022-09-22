@@ -86,7 +86,7 @@ func (t *Probe) LoadIni(filePath string) {
 			continue
 		}
 		t.JobSlice[i-1].Check = s.Key("check").String()
-		t.JobSlice[i-1].Check = s.Key("target").String()
+		t.JobSlice[i-1].Target = s.Key("target").String()
 	}
 }
 
